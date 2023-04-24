@@ -10,6 +10,10 @@ def process():
         # Read integers line by line
         for line in input_numbers:
             input_numbers = int(line)
+            # Create a text file that will contain all the even numbers
+            # Take the even numbers from the input integers
+            if input_numbers % 2 == 0:
+                output_even.write(str(input_numbers) + "\n")
 
 # ===== start =====
 process()
