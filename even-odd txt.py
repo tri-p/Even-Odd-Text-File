@@ -14,6 +14,10 @@ def process():
             # Take the even numbers from the input integers
             if input_numbers % 2 == 0:
                 output_even.write(str(input_numbers) + "\n")
+            # Create a text file that will contain all the even numbers
+            # Take the odd numbers from the input integers
+            else:
+                output_odd.write(str(input_numbers) + "\n")
 
 # ===== start =====
 process()
