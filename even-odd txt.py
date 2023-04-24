@@ -7,6 +7,9 @@
 def process():
     # Open numbers.txt (read), even.txt (append), odd.txt (append)
     with open("numbers.txt") as input_numbers, open("even.txt", "a") as output_even, open("odd.txt", "a") as output_odd:
+        # Read integers line by line
+        for line in input_numbers:
+            input_numbers = int(line)
 
 # ===== start =====
 process()
